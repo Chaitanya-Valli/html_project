@@ -22,13 +22,14 @@ body{
     width: 70%;
     padding-left: 500px;
     color: blueviolet;
-    text-decoration: none;
+    
     
 }
 
 .td2 a{
     color: blueviolet;
     padding: 15px;
+    text-decoration: none;
     
 }
 .h22{

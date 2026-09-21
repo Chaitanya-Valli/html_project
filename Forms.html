@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: "Time New Roman",serif;
+            margin: 30px;
+        }
+        h1{
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .form-row{
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .form-row label{
+            width: 100px;
+        }
+         input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"] {
+            width: 145px;
+            height: 18px;
+        }
+
+        input[type="date"] {
+            width: 145px;
+            height: 20px;
+        }
+
+        select {
+            width: 150px;
+            height: 22px;
+        }
+
+        textarea {
+            width: 240px;
+            height: 80px;
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .radio-group input {
+            margin-left: 0;
+        }
+
+        .buttons {
+            margin-top: 5px;
+        }
+
+        button {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form >
+        <fieldset>
+            <legend> <b>Personal Details</b></legend>
+        <div class="form-row">
+            <label >First Name</label>
+            <input type="text" placeholder="Ex: Valli">
+        </div>
+        <div class="form-row">
+            <label >Surname</label>
+            <input type="text" placeholder="Golla">
+        </div>
+        <div class="form-row">
+            <label >Mobile Number</label>
+            <input type="tel" placeholder="8106268455">
+        </div>
+        <div class="form-row">
+            <label >Email</label>
+            <input type="email" placeholder="chaithanya@gmail.com">
+        </div>
+        <div class="form-row">
+            <label >Password</label>
+            <input type="password">
+        </div>
+        <div class="form-row">
+            <label >Confirm Password</label>
+            <input type="password">
+        </div >
+        <div class="form-row">
+            <label >Date Of Birth</label>
+            <input type="date">
+        </div>
+        <div class="form-row">
+            <label >Age</label>
+            <input type="number">
+        </div>
+        <div class="form-row">
+            <label >Gender</label>
+            <div class="radio-group">
+                <input type="radio" name="gender">
+                <span>Male</span>
+                <input type="radio" name="gender">
+                <span>Female</span>
+                <input type="radio" name="gender">
+                <span>Others</span>
+            </div>
+        </div>
+        <div class="form-row">
+            <label> Select Country</label>
+            <select >
+                <option> India</option>
+                <option> USA</option>
+                <option> UK</option>
+                <option>GERMANY</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label>Upload Picture</label>
+            <input type="file">
+        </div>
+        <div class="button">
+            <button type="reset">Reset</button>
+        </div>
+        </fieldset><br>
+        <fieldset>
+            <legend><b>Course Details</b></legend>
+        
+        <div class="form-row">
+            <label>Select Course</label>
+            <select>
+                <option> Python Full Stack</option>
+                <option> Java Full Stack</option>
+                <option> AI/ML</option>
+                <option> Data Analytics</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label> Delivery Mode</label>
+            <div class="radio-group">
+                <input type="radio" name="mode">
+                <span>Online</span>
+                <input type="radio" name="mode">
+                <span>Offline</span>
+            </div>
+        </div>
+        <div class="form-row">
+            <label>Institute Name</label>
+            <input type="text" placeholder="THOPSTECH">
+        </div>
+        <div class="form-row">
+            <label >Comments</label>
+            <textarea></textarea>
+        </div>
+        <div class="buttons">
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+        </div>
+        </fieldset>
+    </form> 
+</body>
+</html>
